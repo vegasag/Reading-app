@@ -1,0 +1,14 @@
+
+<div *ngIf="book">
+    <h2>{{book.name | uppercase}}</h2>
+    <div>
+      <label>Name: 
+        <input [(ngModel)]="book.name" placeholder="name"/>
+      </label>
+    </div>
+    
+    <div><span>Published </span> {{book.published}}</div>
+  </div>
+
+  <button (click)="save()">Save</button>  
+  <button (click)="goBack()">Go back</button>

@@ -1,0 +1,9 @@
+<h2> My books </h2>
+<ul class = "books">
+  <li *ngFor="let book of books">
+    <a routerLink="/detail/{{book.id}}">
+    <span class="badge">{{book.published}}</span> {{book.name}}
+    </a>
+  </li>
+</ul>
+
